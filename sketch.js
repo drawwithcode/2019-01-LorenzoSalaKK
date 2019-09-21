@@ -3,9 +3,43 @@ function preload(){
 }
 
 function setup() {
-  // put setup code here
+  createCanvas(windowWidth,windowHeight);
+  background("black");
+  frameRate(10);
+  angleMode(DEGREES);
 }
 
 function draw() {
-  // put drawing code here
+translate(windowWidth/2,windowHeight/2);
+rotate(30);
+
+push();
+stroke(lerpColor(color("black"),color("Magenta"),frameCount/36));
+strokeWeight(2);
+  line(cos(frameCount*10)*300,sin(frameCount*10)*300,300,0);
+  pop();
+
+  translate(0,0);
+  rotate(120);
+  push();
+  stroke(lerpColor(color("black"),color("Cyan"),frameCount/36));
+  strokeWeight(2);
+    line(cos(frameCount*10)*300,sin(frameCount*10)*300,300,0);
+    pop();
+
+  translate(0,0);
+  rotate(120);
+  push();
+  stroke(lerpColor(color("Black"),color("Yellow"),frameCount/36));
+  strokeWeight(2);
+    line(cos(frameCount*10)*300,sin(frameCount*10)*300,300,0);
+    pop();
+
+
+
+  if (frameCount==36){
+    noLoop();
+  }
+
+
 }
