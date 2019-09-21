@@ -15,7 +15,7 @@ rotate(30);
 
 push();
 stroke(lerpColor(color("black"),color("Magenta"),frameCount/36));
-strokeWeight(2);
+strokeWeight(1);
   line(cos(frameCount*10)*300,sin(frameCount*10)*300,300,0);
   pop();
 
@@ -23,7 +23,7 @@ strokeWeight(2);
   rotate(120);
   push();
   stroke(lerpColor(color("black"),color("Cyan"),frameCount/36));
-  strokeWeight(2);
+  strokeWeight(1);
     line(cos(frameCount*10)*300,sin(frameCount*10)*300,300,0);
     pop();
 
@@ -31,7 +31,7 @@ strokeWeight(2);
   rotate(120);
   push();
   stroke(lerpColor(color("Black"),color("Yellow"),frameCount/36));
-  strokeWeight(2);
+  strokeWeight(1);
     line(cos(frameCount*10)*300,sin(frameCount*10)*300,300,0);
     pop();
 
